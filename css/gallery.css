@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 모바일을 기본 */
+
+#wrap{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    
+}
+
+/* info_section영역 */
+#info_section{
+    width: 100%;
+    background-color: #70f1a2;
+    border-bottom: 1px solid #39d67c;
+    order: 1;
+
+}
+
+.info_list{
+    display:flex;
+}
+.info_list li{
+    width: 25%;
+    text-align: center;
+}
+.info_list li a{
+    display: block;
+    padding: 15px 0;
+
+}
+/* header영역 */
+#header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    order: 2;
+
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+    background-color: #70f1a2;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    text-shadow: 0 2px 2px #0c2c1a;
+    padding: 30px 0;
+}
+.nav{
+    width: 100%;
+    
+}
+.menu{
+    display: none;
+}
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    background-color: #24302e;
+    
+    
+}
+.menu li a{
+    width: 80%;
+    padding: 20px 0;
+    text-indent: 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    
+}
+.sub_menu_toggle_btn{
+    width: 20%;
+    background:url(../images/s_images/sub_menu_toggle_btn.png) center center no-repeat;
+    cursor: pointer;
+    text-indent: -9999px;
+    
+}
+
+.menu_toggle_btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../images/s_images/menu_toggle_btn.png)no-repeat;
+    text-indent: -9999px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    
+}
